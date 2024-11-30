@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SimplyCountDown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Icon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4>Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+        <h1>Rizky & Rizka</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
+          >Lihat Undangan</a
+        >
+      </main>
+    </section>
+
+    <nav class="navbar bg-transparent sticky-top navbar-expand-md my-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Wedding We Are</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Wedding We Are
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+              <div class="dropdown">
+                <button
+                  class="btn nav-link dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="bd-theme"
+                >
+                  <i
+                    class="bi bi-sun-fill theme-icon-active"
+                    data-theme-icon-active="bi-sun-fill"
+                    id="bd-theme-text"
+                  ></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <button
+                      class="dropdown-item d-flex align-items-center"
+                      type="button"
+                      data-bs-theme-value="light"
+                    >
+                      <i
+                        class="bi bi-sun-fill me-2 opacity-50"
+                        data-theme-icon="bi-sun-fill"
+                      ></i>
+                      Light
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item d-flex align-items-center"
+                      type="button"
+                      data-bs-theme-value="dark"
+                    >
+                      <i
+                        class="bi bi-moon-fill me-2 opacity-50"
+                        data-theme-icon="bi-moon-fill"
+                      ></i>
+                      Dark
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item d-flex align-items-center"
+                      type="button"
+                      data-bs-theme-value="system"
+                    >
+                      <i
+                        class="bi bi-circle-half me-2 opacity-50"
+                        data-theme-icon="bi-circle-half"
+                      ></i>
+                      System
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 20 September 2023 di Pekanbaru, Riau.</h3>
+            <p>
+              Oleh karena itu, dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu/Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Rizky</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ratione quis repellat voluptatibus. <br />Putra dari Bpk.
+                  Rizka <br />
+                  dan <br />
+                  Ibu Rizky
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/couple/user2.jpg"
+                  alt="Rizky"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/couple/user1.jpg"
+                  alt="Rizka"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Rizky</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Ratione quis repellat voluptatibus. <br />Putra dari Bpk.
+                  Rizka <br />
+                  dan <br />
+                  Ibu Rizky
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information Start -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="address">
+              Alamat: Gedung Widya Maharany. <br />Jl. Makmur, Labuh Baru Bar,
+              Kec. Payung Sekaki, Kota Pekanbaru, Riau<br />
+            </p>
+            <a
+              href="https://goo.gl/maps/exM6kWU68q9YjYGG7"
+              target="_blank"
+              class="btn btn-light btn-sm my-4"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang berlangsungnya
+              pernikahan, boleh jadi Anda salah jadwal, atau salah tempat.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span>Minggu, 20 November 2030</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span>Minggu, 20 November 2030</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Information End -->
+
+    <!-- Story Start -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
+              alias sapiente accusamus quidem aperiam porro?
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url(img/bg-wedding.jpg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>1 Juni 2000</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Maiores perferendis nam eveniet pariatur similique illum!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-img"
+                  style="background-image: url(https://picsum.photos/300/300)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mulai Serius</h3>
+                    <span>1 Juni 2005</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Animi veritatis quos distinctio nemo harum maiores.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url(https://picsum.photos/301/301)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Tunangan</h3>
+                    <span>1 Juni 2005</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quis consequatur ipsam quia necessitatibus quo tempora
+                      nesciunt est.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Story End -->
+
+    <!-- Gallery Start -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+              laborum.
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gallery/1.jpg"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/thumbnail/thumb1.jpg"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/137/1200/768"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/137/300/400"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/139/1200/768"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/139/300/400"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/140/1200/768"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/140/300/400"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/141/1200/768"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/141/300/400"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="https://picsum.photos/id/142/1200/768"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="https://picsum.photos/id/142/300/400"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery End -->
+
+    <!-- RSVP Start -->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form dibawah ini untuk melakukan konfirmasi keharidan.</p>
+          </div>
+        </div>
+
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyvzwK9nXZ6diCYHem4i6aOmaYEAZAIPCE9Yf5NxKnbV23sjd0FoxChe2WzH9v0ZJsTNw/exec"
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          id="my-form"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                min="1"
+                max="5"
+                length="1"
+                value="1"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="1" selected>Hadir</option>
+                <option value="0" selected>Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- RSVP End -->
+
+    <!-- Gifts Start -->
+    <section id="gifts" class="gifts">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>ungkapan tanda kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              temporibus, vitae in laboriosam veritatis deserunt?
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div>BCA</div>
+                1232134234 - Ridho Surya
+              </li>
+              <li class="list-group-item">
+                <div>MANDIRI</div>
+                1232134234 - Ridho Surya
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gifts End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block"
+              >&copy; We Are Wedding. All Right Reserved.</small
+            >
+            <small class="block">Design by <a href="">@ridhosurya</a></small>
+
+            <ul>
+              <li class="mt-3">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <div class="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/bg-wedding.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      (() => {
+        "use strict";
+
+        const getStoredTheme = () => localStorage.getItem("theme");
+        const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+
+        const getPreferredTheme = () => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme) {
+            return storedTheme;
+          }
+
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        };
+
+        const setTheme = (theme) => {
+          if (
+            theme === "system" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.setAttribute("data-bs-theme", "dark");
+          } else {
+            document.documentElement.setAttribute("data-bs-theme", theme);
+          }
+        };
+
+        setTheme(getPreferredTheme());
+
+        const showActiveTheme = (theme, focus = false) => {
+          const themeSwitcher = document.querySelector("#bd-theme");
+
+          if (!themeSwitcher) {
+            return;
+          }
+
+          const themeSwitcherText = document.querySelector("#bd-theme-text");
+          const activeThemeIcon = document.querySelector(".theme-icon-active");
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const iconOfActiveBtn =
+            btnToActive.querySelector("i").dataset.themeIcon;
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+              element.setAttribute("aria-pressed", "false");
+            });
+
+          btnToActive.classList.add("active");
+          // btnToActive.setAttribute("aria-pressed", "true");
+          activeThemeIcon.classList.remove(
+            activeThemeIcon.dataset.themeIconActive
+          );
+          activeThemeIcon.classList.add(iconOfActiveBtn);
+          activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+          // activeThemeIcon.setAttribute("href", iconOfActiveBtn);
+          const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+          themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+
+          if (focus) {
+            themeSwitcher.focus();
+          }
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            const storedTheme = getStoredTheme();
+            if (storedTheme !== "light" && storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        window.addEventListener("DOMContentLoaded", () => {
+          showActiveTheme(getPreferredTheme());
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((toggle) => {
+              toggle.addEventListener("click", () => {
+                const theme = toggle.getAttribute("data-bs-theme-value");
+                setStoredTheme(theme);
+                setTheme(theme);
+                showActiveTheme(theme, true);
+              });
+            });
+        });
+      })();
+    </script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2030, // required
+        month: 12, // required
+        day: 7, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "Hari", plural: "Hari" },
+          hours: { singular: "Jam", plural: "Jam" },
+          minutes: { singular: "Menit", plural: "Menit" },
+          seconds: { singular: "Detik", plural: "Detik" },
+        },
+      });
+    </script>
+    <script>
+      const hamburger = document.querySelector(".navbar-toggler");
+      const stickyTop = document.querySelector(".sticky-top");
+      // const btnClose = document.querySelector(".btn-close");
+      const offCanvas = document.querySelector(".offcanvas");
+
+      hamburger.addEventListener("click", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offCanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <!-- Disable Scrolling -->
+    <script>
+      const rootElement = document.querySelector(":root");
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem("opened", "true");
+        playAudio();
+      }
+
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      let isPlayingSong = false;
+      const song = document.querySelector("#song");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      function playAudio() {
+        song.volume = 0.1;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlayingSong = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlayingSong) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlayingSong = !isPlayingSong;
+      };
+
+      // if (!localStorage.getItem("opened")) {
+      //   disableScroll();
+      // }
+      disableScroll();
+    </script>
+
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          });
+        });
+      });
+    </script>
+
+    <!-- Get url by name -->
+    <script>
+      const urlParam = new URLSearchParams(window.location.search);
+      const nama = urlParam.get("n") || "";
+      const pronoun = urlParam.get("p") || "Bapak/Ibu/Saudara/i";
+      const namaContainer = document.querySelector(".hero h4 span");
+      namaContainer.innerText = `${pronoun} ${nama},`.replace(/, $/, ",");
+      // console.log(nama);
+      document.querySelector("#nama").value = nama;
+    </script>
+  </body>
+</html>
